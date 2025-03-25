@@ -40,4 +40,5 @@ if __name__ == "__main__":
     events = fetch_events()
     calendar = build_calendar(events)
     with open("decatur.ics", "w") as f:
-        f.writelines(calendar)
+        f.write(str(calendar))
+
